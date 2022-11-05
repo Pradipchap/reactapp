@@ -2,8 +2,8 @@ import "./App.css";
 import { useState } from "react";
 import Navb from "./components/navbar";
 import InputText from "./components/inputText";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import About from "./about";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import About from "./about";
 
 function App() {
   
@@ -38,27 +38,29 @@ function App() {
 
   return (
     <>
-      <Router>
+      {/* <Router> */}
         <Navb modeColor={mode} toggle={toggleMode} styleForAll={styl} />
 
-        <Routes>
+        {/* <Routes>
           <Route
             exact
             path="/"
-            element={
+            element={ */}
               <div className="container my-3">
                 <InputText
                 styleForInputText={styl}
                 inputTextColor={colorForInput}
               />
               </div>
-            }
-          />
+            {/* } */}
+          {/* /> */}
 
-          <Route exact path="/about" element={<About/>}/>
-        </Routes>
-        <h1>hi this is new branch</h1>
-      </Router>
+          {/* <Route exact path="/about" element={ */}
+          {/* <About/> */}
+          {/* }/> */}
+        {/* </Routes> */}
+        
+      {/* </Router> */}
     </>
   );
 }
